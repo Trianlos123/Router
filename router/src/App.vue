@@ -1,7 +1,7 @@
 <template>
   <section>
     <h1>Rutas con Vue Router</h1>
-    <router-link to="/">Home</router-link>
+    <router-link to="/" exact>Home</router-link>
     <router-link to="/contacto">Contacto</router-link>
     
     <hr>
@@ -13,3 +13,9 @@
 export default {
 }
 </script>
+
+<style>
+  .router-link-active{
+    color:red;
+  }
+</style>
