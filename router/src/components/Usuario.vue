@@ -8,6 +8,11 @@
       return {
         id: this.$route.params.id
       }
+    },
+    watch: {
+      '$route'(to) {
+        this.id = to.params.id;
+      }
     }
   }
 </script>
